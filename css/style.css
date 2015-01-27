@@ -1,9 +1,21 @@
+/* -------- Font styles ------------*/
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500);
+
 body {
 	background-image: url("../images/77H.jpg");
 	background-size: cover;
 	background-position:  5 center;
 	background-repeat: no-repeat;
-	text-align: center;
+	color: white;
+	font-family: Poiret One;
+	font-weight: 300;
+}
+h1 {
+	position: relative;
+	top: 4%;
+	left: 7%;
+	font-size: 2.5em;
 }
 h2 {
 	background-color: rgba(160, 160, 160, .3);
@@ -17,4 +29,27 @@ h2 {
 	border: .1em solid;
 	border-color: rgba(255, 255, 255, .4);;
 	font-size: 1.25em;
+}
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-image: url("../images/14H.jpg");
+	background: 5 center no-repeat;
+	background-size: cover;
+	color: white;
+}
+.selfPhoto {
+	height: 200px;
+	width: 300px;
+	border-radius: 50%;
+	position: relative;
+	top: 2em;
+	left: 5%;
+	opacity: 0.5;
 }
