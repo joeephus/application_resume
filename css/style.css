@@ -30,6 +30,8 @@ h2 {
 	border-color: rgba(255, 255, 255, .4);;
 	font-size: 1.25em;
 }
+/* ----------------- Make sure to remote display: none; ------------------- */
+
 .overlay {
 	position: absolute;
 	width: 100%;
@@ -43,7 +45,9 @@ h2 {
 	background: 5 center no-repeat;
 	background-size: cover;
 	color: white;
+	display: none;
 }
+
 .selfPhoto {
 	height: 200px;
 	width: 300px;
@@ -53,3 +57,30 @@ h2 {
 	left: 5%;
 	opacity: 0.5;
 }
+.floatParagraph {
+	float: left;
+	margin-left: 9%;
+	text-align: center;
+	font-size: 1.5em;
+}
+.button {
+	float: left;
+	clear: left;
+	font-size: 2em;
+	margin-left: 8%;
+	background-color: white;
+	color: black;
+	padding: .3em;
+	border-radius: 10px;
+	opacity: 0.7;
+	-webkit-transition: background .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	-webkit-transition: color .5s ease-in-out;
+}
+.button:hover {
+	color: white;
+	background: black;
+	opacity: 1;
+}
+
+/*------------------Mobile -------------------*/
