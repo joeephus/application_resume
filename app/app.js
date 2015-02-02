@@ -28,6 +28,7 @@ $(document).ready(function() {
 	var $button = $(".button");
 	$button.on('click', function() {
 		$(".overlay").fadeOut(1000);
+		$(".hidden").fadeIn(2500);
 	});
 
 });

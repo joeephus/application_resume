@@ -2,6 +2,9 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500);
 
+html {
+	height: 100%;
+}
 body {
 	background-image: url("../images/77H.jpg");
 	background-size: cover;
@@ -10,32 +13,35 @@ body {
 	color: white;
 	font-family: Poiret One;
 	font-weight: 300;
+	min-height: 100%;
+	width: 100%;
+	line-height: 1.25;
 }
 h1 {
-	position: relative;
-	top: 4%;
-	left: 7%;
+	float: left;
+	margin: 3% 0 0 4%;
 	font-size: 2.5em;
 }
-h2 {
-	background-color: rgba(160, 160, 160, .3);
-	position: absolute;
-	top: 5%;
-	left: 10%;
-	font-size: 1.25em;
-	border-radius: 50%;
-	color: rgba(255, 255, 255, .9);
-	padding: .5em;
-	border: .1em solid;
-	border-color: rgba(255, 255, 255, .4);;
-	font-size: 1.25em;
+span {
+	font-size: 1.75em;
+	text-decoration: underline;
 }
+p {
+	margin: .25em;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+/*
+div {
+	border: 1px solid orange;
+}
+*/
 /* ----------------- Make sure to remote display: none; ------------------- */
 
 .overlay {
 	position: absolute;
-	width: 100%;
-	height: 100%;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -45,29 +51,22 @@ h2 {
 	background: 5 center no-repeat;
 	background-size: cover;
 	color: white;
-	display: none;
-}
-
-.selfPhoto {
-	height: 200px;
-	width: 300px;
-	border-radius: 50%;
-	position: relative;
-	top: 2em;
-	left: 5%;
-	opacity: 0.5;
 }
 .floatParagraph {
 	float: left;
-	margin-left: 9%;
+	clear: left;
+	margin: 2% 0 0 4%;
 	text-align: center;
 	font-size: 1.5em;
+	text-align: left;
+	width: 30%;
 }
 .button {
-	float: left;
 	clear: left;
+	float: left;
 	font-size: 2em;
-	margin-left: 8%;
+	margin-left: 4%;
+	margin-top: 2%;
 	background-color: white;
 	color: black;
 	padding: .3em;
@@ -82,5 +81,70 @@ h2 {
 	background: black;
 	opacity: 1;
 }
-
-/*------------------Mobile -------------------*/
+.aboutMe {
+	float: left;
+	margin: 2% 0 0 2.5%;
+	font-weight: 500;
+	font-size: 1.25em;
+	background-color: rgba(0,0,0, .4);
+	border-radius: .75em;
+}
+.lifePara {
+	clear: left;
+	float: left;
+	margin: 2%;
+}  
+.heading {
+	clear: left;
+}
+.inspiration {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 2% 0 0 0;
+	border-radius: 30px 0 0 30px;
+	font-size: 1em;
+	background-color: rgba(0,0,0, .4);
+	padding: 1% 0 1% 6%;
+}
+.scaled {
+	height: 7em;
+	width: 7em;
+	margin: 20%;
+	opacity: .6;
+	display: block;
+	float: right;
+	margin-bottom: .2%;
+	clear: right;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.scaled:hover {
+	transform: scale(1.5);
+}
+.hidden {
+	display: none;
+}
+.mepic {
+	opacity: .8;
+	width: 150px;
+	border-radius: 50%;
+	clear: left;
+	margin-top: .5em;
+}
+.contact {
+	position: fixed;
+	bottom: 1em;
+	right: 0;
+	padding-left: 2%;
+	border-radius: 30px 0 0 30px;
+	font-size: 1em;
+	background-color: rgba(0,0,0, .4);
+}
+/* ----------------Debugger Mode ------------	
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
